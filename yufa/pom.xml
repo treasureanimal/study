@@ -3,24 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>springWeb</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>org.example</groupId>
-    <artifactId>springWeb</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>yufa</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>netty</module>
-        <module>spring-shouxie</module>
-        <module>rpc-shouxie</module>
-        <module>springboot-shouxie</module>
-        <module>juc</module>
-        <module>suanfa</module>
-        <module>yufa</module>
+        <module>java8</module>
+        <module>shejimoshi</module>
+        <module>java11</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
