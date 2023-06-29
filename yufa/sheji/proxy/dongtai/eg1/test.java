@@ -1,6 +1,7 @@
 package sheji.proxy.dongtai.eg1;
 
-import com.study.sheji.proxy.jingtai.Station;
+
+import sheji.proxy.jingtai.Station;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

@@ -1,6 +1,5 @@
 package sheji.proxy.dongtai.cglib.eg2;
 
-import com.study.sheji.proxy.dongtai.eg3.RealSubject;
 import org.springframework.cglib.proxy.Enhancer;
 
 public class CGlibProxy {
