@@ -3,6 +3,9 @@ package com.tuling.bio;
 import java.io.IOException;
 import java.net.Socket;
 
+/**
+ * @author zhangxiaoxiong
+ */
 public class SocketClient {
 
     public static void main(String[] args) throws IOException, InterruptedException {

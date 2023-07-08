@@ -12,6 +12,7 @@ import java.util.concurrent.Executors;
 
 /**
  * 线程池版本
+ * @author zhangxiaoxiong
  */
 public class ServerMultiThread {
     public static void main(String[] args) throws Exception {
@@ -23,14 +24,14 @@ public class ServerMultiThread {
         final AsynchronousServerSocketChannel serverChannel = AsynchronousServerSocketChannel.open(threadGroup)
                 .bind(new InetSocketAddress(9000));
 
-        serverChannel.accept(null, new CompletionHandler<AsynchronousSocketChannel, Object>() {
+        serverChannel.accept(null, new CompletionHandler<>() {
             @Override
             public void completed(AsynchronousSocketChannel socketChannel, Object attachment) {
                 try {
                     serverChannel.accept(attachment, this);
                     System.out.println(socketChannel.getRemoteAddress());
                     ByteBuffer buffer = ByteBuffer.allocate(1024);
-                    socketChannel.read(buffer, buffer, new CompletionHandler<Integer, ByteBuffer>() {
+                    socketChannel.read(buffer, buffer, new CompletionHandler<>() {
                         @Override
                         public void completed(Integer result, ByteBuffer attachment) {
                             attachment.flip();
