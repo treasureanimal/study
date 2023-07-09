@@ -1,4 +1,4 @@
-package com.study.nio;
+package com.study.nio.buffer;
 
 import java.io.RandomAccessFile;
 import java.nio.MappedByteBuffer;

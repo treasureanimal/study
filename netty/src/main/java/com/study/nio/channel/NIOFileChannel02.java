@@ -1,4 +1,4 @@
-package com.study.nio;
+package com.study.nio.channel;
 
 import java.io.File;
 import java.io.FileInputStream;

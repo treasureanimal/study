@@ -1,4 +1,4 @@
-package com.study.nio;
+package com.study.nio.channel;
 
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
